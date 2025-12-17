@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1 - Compteur</title>
+</head>
+<body>
+    <h1>Compteur dynamique</h1>
+    <p id="compteur">Compteur : 0</p>
+    <button id="bouton">Cliquez ici</button>
+
+    <script>
+        // Récupérer les éléments HTML
+        let compteurElement = document.getElementById("compteur");
+        let bouton = document.getElementById("bouton");
+        
+        // Variable pour stocker la valeur du compteur
+        let compteur = 0;
+        
+        // Fonction qui s'exécute quand on clique sur le bouton
+        bouton.addEventListener("click", function() {
+            compteur++; // Augmenter la valeur de 1
+            compteurElement.textContent = "Compteur : " + compteur; // Mettre à jour l'affichage
+        });
+    </script>
+</body>
+</html>
